@@ -47,9 +47,20 @@ const deleteUser = async (id) => {
     return data //? Retorna 1 en caso de que se haya eliminado, o 0 en caso de que el id no exista
 }
 
+const findUserByEmail = async (email) => {
+    const data = await Users.findOne({
+        where: {
+            email: email
+        }
+    })
+    return data 
+}
+
+
 module.exports = {
     findAllUsers,
     findUserById,
+    findUserByEmail,
     createUser,
     updateUser,
     deleteUser
