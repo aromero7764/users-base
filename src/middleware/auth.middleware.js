@@ -1,5 +1,12 @@
 //? Middleware para proteger mis rutas
 
+/* 
+Deberas crear la configuracion de passport 
+con la estrategia de JWT verificando si pertenece a
+un usuario correcto 
+*/ 
+
+
 //? Passport tiene diferentes estrategias para manejar logins (bearer, jwt, facebook, google oath, etc)
 const JwtStrategy = require("passport-jwt").Strategy;
 

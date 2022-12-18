@@ -3,6 +3,12 @@ const jwt = require('jsonwebtoken')
 const checkUserCredential = require('./auth.controller')
 const jwtSecret = require('../../config').api.jwtSecret
 
+/* 
+ Deberas manejar el servicio del login y ejecutar el controlador del punto
+ a. En caso de ser exitoso deberas crear un token que almacene el id, 
+ el email y el rol del usuario 
+*/
+
 
 const postLogin = (req, res) => {
 
